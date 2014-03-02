@@ -9,6 +9,7 @@ def index():
 
 @app.route('/result')
 def result():
+	submission = index.get("input")
 	return render_template("result.html")
 
 @app.route('/about')
